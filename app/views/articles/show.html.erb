@@ -1,0 +1,22 @@
+<h2><%= @article.title %></h2>
+<div>
+  <p><%= @article.content %></p>
+
+  <p>
+    <%= link_to article_path, method: :delete, data: { confirm: "Are you sure?" } do %>
+     <i class="fas fa-trash-alt"></i>
+     <% end %>
+  </p>
+
+  <p><%= link_to articles_path do %>
+  <i class="fas fa-igloo"></i>
+  <% end %>
+  </p>
+
+
+  <p><%= link_to new_article_path do %>
+    <i class="fas fa-edit"></i>
+    <% end %>
+    </p>
+
+</div>
